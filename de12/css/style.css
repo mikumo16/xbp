@@ -52,3 +52,11 @@ span.blackback{
     color: #efefef;
 }
 
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 5px 15px;
+}
+
