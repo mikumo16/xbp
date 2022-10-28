@@ -29,6 +29,7 @@ html, body {
     margin-bottom: 40px;
 	background: #efefef;
 }
+
 h1{
     text-indent: 0em;
 }
@@ -60,3 +61,6 @@ th,td{
     padding: 5px 15px;
 }
 
+mark{
+    background: linear-gradient(transparent 40%, #f0e68c 0%);
+  }
