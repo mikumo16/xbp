@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>ミクモ デザイン演習-4</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+<h1>ゲーム作成</h1>
+
+<h2>脱出ゲーム</h2>
+  <div>
+    私たちはpythonを使って脱出ゲームを作ってみることにしました。
+  </div>
+
+  <h3>ゲームの内容</h3>
+  <div>
+    ゲームの内容は選択肢を選んでもらい、正解を選べば先に進めるというもの。<br>
+    主にif関数を使い、正解と不正解の展開を分岐させた。<br>
+    試しに友人に遊んでみてもらっているうちに、不正解だった場合すぐに最初からやり直せると便利だと感じた。<br>
+    そのため、while文を使いループさせてみた。<br>
+    不正解を選んだ場合は「continue」で一問目に戻り、脱出成功した場合は「break」でループから抜け出し終われるようにした。<br>
+    <br>
+    参考サイト<br>
+    <P><a href="https://code-graffiti.com/while-loop-in-python/" target="_blank">while文で反復処理(外部サイト)</a></P>
+  </div>
+
+<h2>ソースコード</h2>
+
+<code>
+  <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">print("講義中寝てしまったあなたは目が覚めると教室3007にいた。\n教室の中にはあなた以外にもう一人誰かがいる。")</li>
+  <li style="background-color:#EEF;">print("その人、A君の話によると、どうやら学校は既に閉じてしまったらしい。\nつまり、君たちは学校に閉じ込められてしまったのだ！！")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">print() #blank line</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">name=input("A「君の名前は？」")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">while True: #ループのスタート地点</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(name, "!これからどうしよう？")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;#質問1</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("1.周りを見渡す")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("2.諦めてまた寝る")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("3.扉を無理やりぶち壊す")</li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;choicea=int(input("どうする？1~3の中から選ぼう"))</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if choicea==2:</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("目が覚めたら家のベッドの上だった。なんだ、夢だったのか！！")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break #ゲーム終了</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choicea==3:</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("残念！教室は出られたが器物損壊罪で捕まってしまった！\n最初からやり直そう")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue #最初に戻る</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choicea==1:</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("机の上に道用先生のパソコンを見つけた！これで何かできるかもしれない")</li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("パソコンにはロックがかかっている!")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("何度もパスワードを試したが開かない。試せるのはあと一回だ。なんと打つ？")</li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#質問3</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("1.doyo_design")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("2.doyodoyodoyo")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("3.daisuke_doyo")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;choiceb=int(input("1~3の中から選ぼう"))</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if choiceb==1:</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("残念！脱出失敗！\n最初からやり直そう")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif choiceb==2:</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("残念！脱出失敗！\n最初からやり直そう")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif choiceb==3:</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("パソコンが開いた！同時になぜか教室の扉も開いた！")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("しかし、教室を出てみると3階では火事が起こっていた！火はどんどんこちらに迫ってきている。どうしよう！！")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#質問3</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("1.とりあえず火から逃げよう！上に向かう")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("2.脱出するには出入口に向かうしかない。火をかいくぐり頑張って下に向かう")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;choicec=int(input("1~2 の中から選ぼう"))</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() #balnk line</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if choicec==2:</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("火事に飲み込まれてしまった...\n残念！最初からやり直そう")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif choicec==1:</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("階段を登って21階まで来た！しばらくは大丈夫そうだ")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("A君のスマホには3％だけ電池が残っている！")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("誰か一人くらいには電話をできそうだ。誰かに電話して助けを求めよう！")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#質問4</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("1.A君の友人である大富豪に電話する")</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("2.消防に連絡")</li>
+  <li style="background-color:#EFF;"></li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;choiced=int(input("どちらに電話をかけよう。1~2の中から選ぼう"))</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() #blank line</li>
+  <li style="background-color:#EEF;"></li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if choiced==2:</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("消防は間に合わず火に飲み込まれてしまった\n最初からやり直そう")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif choiced==1:</li>
+  <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("大富豪の友達がヘリを呼んでくれて助かった！\n",name, "おめでとう！！君は脱出に成功した!")</li>
+  <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</li>
+  </ol></code>
+  
+     <p><a href="https://mikumo16.github.io/xbp/de12/index.html">前のページに戻る</a></p>
+    
+    
+</body>
+</html>
