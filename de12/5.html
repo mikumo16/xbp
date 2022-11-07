@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>ミクモ デザイン演習 第5回</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+<h1 class="cp_h1title">ライブラリ</h1>
+
+<div>
+    睡眠時間が足りないという悩みを解決するために、<br>
+    毎日決まった時間に就寝することを手助けするプログラムがあれば良いのではないかと考えた。<br>
+    そこで、scheduleライブラリとwebbrowserライブラリを使って、<br>
+    毎日決まった時間に睡眠用BGMを流すプログラムを作成した。
+</div>
+
+<h3>ソースコード</h3>
+    
+<code>
+    <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+    <li style="background-color:#EFF;">import datetime</li>
+    <li style="background-color:#EEF;">import schedule#決まった時間に繰り返しプログラムを実行</li>
+    <li style="background-color:#EFF;">import time</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">#再生時間の設定</li>
+    <li style="background-color:#EEF;">print("睡眠用BGMを再生する時間を指定してください")</li>
+    <li style="background-color:#EFF;">hour = input("時間（hour）：")</li>
+    <li style="background-color:#EEF;">minute = input("分（minute）：")</li>
+    <li style="background-color:#EFF;">target = f"{hour.zfill(2)}:{minute.zfill(2)}"</li>
+    <li style="background-color:#EEF;">print(target+"にセットしました")</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">#使用する動画の指定</li>
+    <li style="background-color:#EFF;">def job():</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;import webbrowser#指定したURLを開く</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;webbrowser.open("https://youtu.be/XGSSmQiqBl8")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;print("おやすみなさい！")</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">#毎日指定した時間に実行するという指示</li>
+    <li style="background-color:#EFF;">schedule.every().day.at(target).do(job)</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;</li>
+    <li style="background-color:#EFF;">while True:</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;schedule.run_pending()</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;time.sleep(60)</li>
+    </ol></code>
+
+<h3>参照元</h3>
+<dib>
+    <a href="https://qiita.com/Rxxx/items/d1f7d9a08dacf693b0a9" target="_blank">スケジュールライブラリ</a>
+    <a href="https://teratail.com/questions/358689" target="_blank">指定した時間にyoutubeを開く</a>
+</dib>
+
+<p><a href="./index.html">前のページに戻る</a>
+    <a href="https://kuxbp.github.io/xbp/xbp2022/design_e12/">デザイン演習トップページ</a></p>
+   
+</body>
+</html>
