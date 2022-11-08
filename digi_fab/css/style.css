@@ -29,9 +29,15 @@ html, body {
     margin-bottom: 40px;
 	background: #efefef;
 }
-h1{
-    text-indent: 0em;
-}
+
+h1 {
+    color: #393939;/*文字色*/
+    border: solid 3px #393939;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+    text-align: center;
+  }
+
 h2{
     margin-left: 1em;
     margin-top: 1em;
@@ -39,6 +45,15 @@ h2{
 h3{
     margin-left: 2em;
 }
+
+.cp_h1title {
+	padding: 4px 0;
+	border-top: 3px double #393939;
+	border-bottom: 3px double #393939;
+	text-align: center;
+	color: #393939;
+}
+
 div{
     margin-top: 1em;
     margin-left: 3em;
@@ -52,3 +67,14 @@ span.blackback{
     color: #efefef;
 }
 
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 5px 15px;
+}
+
+mark{
+    background: linear-gradient(transparent 40%, #f0e68c 0%);
+  }
