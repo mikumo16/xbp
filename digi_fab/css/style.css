@@ -35,7 +35,7 @@ h1 {
     border: solid 3px #393939;/*線色*/
     padding: 0.5em;/*文字周りの余白*/
     border-radius: 0.5em;/*角丸*/
-    text-align: center;
+    text-align: center;/*中央寄せ*/
   }
 
 h2{
