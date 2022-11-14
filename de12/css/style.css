@@ -43,10 +43,10 @@ h3{
 
 .cp_h1title {
 	padding: 4px 0;
-	border-top: 3px double #000;
-	border-bottom: 3px double #000;
+	border-top: 3px double #393939;
+	border-bottom: 3px double #393939;
 	text-align: center;
-	color: #000;
+	color: #393939;
 }
 
 div{
