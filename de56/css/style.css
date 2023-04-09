@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* 冒頭でimport */
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
+/* フォントを指定したいところで */
+
+logo img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 画像のトリミング */
+}
+
+logotohome img{
+    border-radius: 70%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover; /* 画像のトリミング */
+}
+
+
+
+/* ========== common ========== */
+html, body {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #393939;
+    margin-left: 15px;
+    margin-bottom: 40px;
+	background: #efefef;
+}
+
+h1 {
+    color: #393939;/*文字色*/
+    border: solid 3px #393939;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+    text-align: center;/*中央寄せ*/
+  }
+
+h2{
+    margin-left: 1em;
+    margin-top: 1em;
+}
+h3{
+    margin-left: 2em;
+}
+
+.cp_h1title {
+	padding: 4px 0;
+	border-top: 3px double #393939;
+	border-bottom: 3px double #393939;
+	text-align: center;
+	color: #393939;
+}
+
+div{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+p{
+    margin-left: 3em;
+}
+span.blackback{
+    text-indent: 3em;
+    background: #393939;
+    color: #efefef;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 5px 15px;
+}
+
+mark{
+    background: linear-gradient(transparent 40%, #f0e68c 0%);
+  }
