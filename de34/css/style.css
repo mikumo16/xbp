@@ -42,9 +42,26 @@ h2{
     margin-left: 1em;
     margin-top: 1em;
 }
+
+
+
 h3{
-    margin-left: 2em;
-}
+    position: relative;
+    padding-left: 1.2em;/*アイコン分のスペース*/
+    line-height: 1.4;
+  }
+  
+  h3:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";/*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;/*絶対位置*/
+    font-size: 1em;/*サイズ*/
+    left: 0;/*アイコンの位置*/
+    top: 0;/*アイコンの位置*/
+    color: #4682b4; /*アイコン色*/
+    font-weight: 900;
+  }
 
 .cp_h1title {
 	padding: 4px 0;
