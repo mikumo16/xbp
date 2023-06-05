@@ -11,24 +11,41 @@
     <h1>プロジェクトノート</h1>
 
     <h3>アイディアスケッチ</h3>       
-        <img src="" width="40%">
+        <img src="./images/mahou_ideasketch.jpg" width="40%">
 
     <h3>概要</h3>
         <div>
-
+            魔法を使えるようになりたいので、光を当てると魔法みたいなエフェクト的なアニメーションが流れる仕組みの何か。<br>
+            アニメーション内に出てきたQRコードを読み取るととあるオブジェが光ります。すごい！
         </div>
 
     <h3>プロセスメモ</h3>
         <div>
-            ■Arduinoを使って光センサーの値によってアニメーションを動かす<br>
-            ●Proccesingを使う<br>
-            →(参照) <a href="https://fabble.cc/fablabminatomirai/arduino-processing">ArduinoとProcessingを繋げる</a>
-         </div>
          <div>
-           ■光センサーの値によって魔法みたいな映像を流す
+           ■光センサーの値によって魔法みたいな映像を流す<br>
+           →Processingを使う
            <div>
             ■Processingコーディング<br>
-            ●QRコードの画像を流す
+                <ol>
+                    <li>■光センサーでProcessingを作動させる<br>
+                    →(参照) <a href="https://fabble.cc/fablabminatomirai/arduino-processing">ArduinoとProcessingを繋げる</a>
+                    </li>
+                    <li>
+                        ■魔法みたいなアニメーション作る<br>
+                        ●いい感じのコピペ元探す<br>
+
+                    </li>
+                    <li>
+                        ■アニメーション内にQRコードを流す<br>
+                        ●Processingで画像を出す方法<br>
+                        →<a href="http://jkoba.net/prototyping/processing/basic_image_practice.html">画像が動き回る仕組み</a><br>
+                        →実際にQRコードを動かせた!(<a href="./code_sample.html"" target="_blank">Processingのコード</a>) 
+
+                    </li>
+                    <li>
+                        ●1から2,3を繋げる
+                    </li>
+                </ol>          
            </div>
            <div>
             ■デジファブ使って杖型のライト作り

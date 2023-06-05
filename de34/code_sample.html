@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>ミクモ　de34-4</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h3>画像を動かすProcessingコード</h3> 
+    (参照)<a href="http://jkoba.net/prototyping/processing/basic_image_practice.html" target="_blank">画像ファイルを貼り付けて動かしてみよう</a><br>
+    <mark>img = loadImage( "QR_mypage_sample.png" )</mark>の部分に動かしたい画像ファイル名。
+            <pre>
+                <code>
+                    // basic_image_sample1
+
+                    int x = 0;
+                    int y = 0;
+                    int dir_x = 1;
+                    int dir_y = 1;
+                    int speed = 3;
+                    
+                    PImage img;
+                    
+                    void setup() {
+                      size( 300, 300 );
+                      frameRate( 30 );
+                      img = loadImage( "QR_mypage_sample.png" );
+                    }
+                    
+                    void draw() {
+                      background( 255 );
+                    
+                      x += dir_x * speed;
+                      y += dir_y * speed;
+                    
+                      if ( ( x < 0 ) || ( x > width - img.width ) ) {
+                        dir_x = - dir_x;
+                      }
+                    
+                      if ( ( y < 0 ) || ( y > height - img.height ) ) {
+                        dir_y = - dir_y;
+                      }
+                    
+                      image( img, x, y );
+                    }
+                </code>
+              </pre>
+    <br>
+    
+</body>
+</html>
