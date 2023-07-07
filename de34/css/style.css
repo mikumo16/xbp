@@ -150,7 +150,11 @@ mark{
 
 /*リンクの下線消去*/
 a {
+    color: #479add;
     text-decoration:none; 
+}
+a:hover{
+    color: #1476c6;
 }
 
 /*-----------左右に広がるボタン-------------------*/

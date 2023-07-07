@@ -23,43 +23,80 @@
         <div>
          <div>
            ■光センサーの値によって魔法みたいな映像を流す<br>
-           →Processingを使う
+           →<mark>Processing</mark>を使う
            <div>
             ■Processingコーディング<br>
                 <ol>
-                    <li>■光センサーでProcessingを作動させる<br>
-                    →(参照) <a href="https://fabble.cc/fablabminatomirai/arduino-processing">ArduinoとProcessingを繋げる</a>
+                    <li>■光センサーでProcessingを動かす<br>
+                        →(参照) <a href="https://fabble.cc/fablabminatomirai/arduino-processing" target="_blank">ArduinoとProcessingを繋げる</a><br><br>
+                        ■センサーの値によってアニメーションが再生されるようにするには?
                     </li>
                     <li>
-                        ■魔法みたいなアニメーション作る<br>
-                        ●いい感じのコピペ元探す<br>
+                        ■魔法みたいなアニメーションをProcessingで作る<br>
+                        ●いい感じのコピペ元探す(氷魔法をイメージ)<br>
+                        →(参照)<a href="http://blog.livedoor.jp/reona396/archives/55010192.html" target="_blank">Processingでキラキラ図形を描く</a><br>
+                        →色を寒色系に変更し氷魔法感を出す<br><br>
 
                     </li>
                     <li>
                         ■アニメーション内にQRコードを流す<br>
                         ●Processingで画像を出す方法<br>
-                        →<a href="http://jkoba.net/prototyping/processing/basic_image_practice.html">画像が動き回る仕組み</a><br>
-                        →実際にQRコードを動かせた!(<a href="./code_sample.html"" target="_blank">Processingのコード</a>) 
+                        →(参照)<a href="http://jkoba.net/prototyping/processing/basic_image_practice.html" target="_blank">画像が動き回る仕組み</a><br>
+                        →実際にQRコードを動かせた! <br><br>
 
                     </li>
                     <li>
-                        ●1から2,3を繋げる
+                        ■1から2,3を繋げる<br>
+                        →先生のおかげもあり繋がった！
                     </li>
-                </ol>          
+                </ol>
+                <div>
+                    ■アニメーションが流れると同時に効果音を流す<br>
+                    ●Processingで音を流す方法を調べる<br>
+                    →(参照)<a href="https://konsuki.com/4443/" target="_blank">Processingで音を出す方法</a><br>
+                    →アニメーションのコードに追加する<br>
+                    ●アニメーションと同時には流れるが、音が連発されてしまう…<br>
+                    →先生が新しくif関数を足してくれて解決！ありがとうございます<br>
+                    <br>
+                    →使用した効果音<br>
+                    →<a href="https://www.springin.org/sound-stock/subcategory/magic/" target="_blank">Springin</a>というサイトのフリー音源「魔法詠唱3」<br>
+
+                </div>
+                <div class="container">
+                    <strong>
+                        完成したArduinoとProcessingのソースコードはこちら↓
+                    </strong><br><br>
+                    　　<a href="./code1.html" target="_blank" class="btn-animation-02"><span>ソースコード</span></a><br><br>
+                </div>          
            </div>
            <div>
-            ■デジファブ使って杖型のライト作り
+            ■デジファブ使って杖型のライト作り<br>
+            →3Dプリンターで杖の形作り<br>
+            ●LED買う<br>
+            →買った<br>
+            ●アクリル絵の具で茶色に塗ってそれっぽくする<br>
+
            </div>
          </div>
          <div>
             ■映像内に出現したQRコードを読みとると雪だるまオブジェが光るシステムを作る
             <div>
-                ■QRコードとLEDのプログラミング
+                ■QRコードとLEDのプログラミング<br>
+                ●授業でも行った<a href="https://qiita.com/doyodoyo/private/e42087e7f7f99a7dfe60" target="_blank">dfLinkを使った遠隔システム</a>作る<br>
+                →dfLinkのQRコードを上記のProcessingの画像に設定
             </div>
             <div>
-                ■雪だるまづくり⛄
+                ■雪だるまづくり⛄<br>
+                ●3Dプリンターで作る、LEDを中に入れるといい感じに光るようにする<br>
+                →1つ目(思ったように光らなかったので作り直す)<br>
+                →完成品
             </div>
+           
          </div>
+         <div>
+            ■スクリーンに映すには配線が短いので長くする<br>
+            →はんだをつかって長くした
+        </div>
 
     <h3>使用したもの</h3>
         <div>
