@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 body {
     margin:0px;
     padding:0px;
     text-align:center;
+    font-family:'M PLUS Rounded 1c', sans-serif;
     }
     #outer {
     font-size:13px;
