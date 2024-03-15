@@ -166,6 +166,17 @@ a:hover{
     color: #1476c6;
 }
 
+/*外部リンクアイコン*/
+a[target="_blank"] {
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    font-weight: 900;
+    margin: 0 0.25rem;
+    font-size: 0.7em;
+  }
+}
+
 /*-----------左右に広がるボタン-------------------*/
 .btn-animation-02 {
   display: inline-block;
