@@ -9,22 +9,68 @@
 </head>
 <body>
     <h1>Withal circular～製作編～</h1>
-    <h2>アイデアの構想</h2>
+    <h2>設計</h2>
         <div>
-            <h3>リサイクルボードの使用例</h3>
+            <h3>使用するもの</h3>
             <div>
             <ul>
-                <li></li>   
+                <li>リサイクルボード(1枚900*1800)</li> 
+                <li>Fusion</li>  
+                <li>CNC</li>
             </ul>
-            使用例を調べると、<a href="https://paneco.tokyo/" target="_blank">PANECO</a>の例が多かった。<br>
+            背もたれ・仕切りとなる上パーツ、座面パーツ、足となる下パーツで分担して設計<br>
+            自分は<strong>下パーツ</strong>を担当<br><br>
+            また、材料の関係で上部と下部パーツの形はM字型にすることに。(↓3Dイメージ)<br><br>
+            <img src="./images/image_CG3.png" width="30%"><br>
             </div>
         </div>
         <div>
-            <h3>例を元にコレスポンデンス分析</h3>
+            <h3>fusionで設計</h3>
+            いよいよFusionを使って設計していきます!<br>
+            fusionの設計では以下のことをポイントに作成。
             <div>
-            
+            <strong>point1</strong>:パラメータを駆使する<br><br>
+            <img src="./images/parameter.png" width="50%"><br><br>
+            <strong>point2</strong>:中心線を基準に設計<br><br>
+            <strong>point3</strong>:CNCの切り方的に角を切り取ることができないので、角を作りたい部分には穴を作る<br><br>
+            <img src="./images/sekkei_suketti.png" width="40%"> <img src="./images/sekkei_heimen.png" width="40%"><br>
+            <img src="./images/sekkei_rittai.png" width="40%">
             </div>
         </div>
+        <div>
+            <h3>アセンブル</h3>
+            <div>
+                設計したパーツを複製しアセンブルで組み合わさるかを確認する<br><br>
+                <img src="./images/sekkei_kumitate.png" width="40%"><br><br>
+                最難関の座面パーツの設計も完了したのでこちらも確認のためアセンブル!<br><br>
+                <img src="./images/asenburu.png" width="40%"><br><br>
+                アセンブルして少しでもずれていたら修正し、無事2パーツ完成<br>
+                そして上パーツも完成し、アセンブルでズレていないことを確認<br><br>
+                (全パーツアセンブル画像&動画)<br><br>
+                <mark>fusionでの設計完了!</mark>
+            </div>
+        </div>
+        <div>
+            <h3>テストカット</h3>
+            <div>
+                実際に削り出す前に小さなパーツで設計したスリットと凸がはまるかを確認<br><br>
+                <img src="./images/testcut.jpg" width="40%"><br>
+
+            </div>
+        </div>
+
+    <h2>出力</h2>
+        <div>
+            <h3>下側・座面パーツの切り出し</h3>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nd9kZXMjbec?si=iGNwpVAflt9hJbkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                繊維からできているため、削るとめちゃくちゃ繊維がポロポロ出てきました。掃除が大変でした。<br>
+            </div>
+        </div>
+        <div>
+            <h3>上パーツ</h3>
+        </div>
+
 
     <p>
     <a href="./1.html" class="btn-animation-02"><span>前のページに戻る<span></a>
