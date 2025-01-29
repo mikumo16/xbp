@@ -3,39 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>doyolab_mikumo_top</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/xbp.ico">
 </head>
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
-    <h1>doyolab</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <logotohome>
+                <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
+            </logotohome>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://mikumo16.github.io/xbp/de12/index.html">デザイン演習1・2</a></li>
+                  <li><a class="dropdown-item" href="https://mikumo16.github.io/xbp/digi_fab/index.html">デジタルファブリケーション</a></li>
+                  <li><a class="dropdown-item" href="https://mikumo16.github.io/xbp/de34/index.html">デザイン演習3・4</a></li>
+                  <li><a class="dropdown-item" href="https://mikumo16.github.io/xbp/de56/index.html">デザイン演習5.6</a></li>
+                  <li><a class="dropdown-item" href="https://mikumo16.github.io/xbp/doyolab/index.html">ゼミ</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <h1>ゼミ活動記録</h1>
     <br>
     
-        <div class="container"style="text-align:center">
-            <h2>春休み</h2>
-                <a href="./1.html" class="btn-animation-02"><span>withal1<span></a><br><br>
-                <a href="./2.html" class="btn-animation-02"><span>withal2<span></a><br><br>
-                <a href="./3.html" class="btn-animation-02"><span>withal3<span></a><br><br>
-                <a href="./EOC.html" class="btn-animation-02"><span>Essence of Challenge 2024<span></a><br><br>
-                <a href="./4.html" class="btn-animation-02"><span>withal 発表<span></a><br><br>
-                <br>
-            <h2>鎌倉共創プロジェクト</h2>
-                <a href="./kamakura1.html" class="btn-animation-02"><span>4/19<span></a><br><br>
-                <a href="./kamakura2.html" class="btn-animation-02"><span>4/26<span></a><br><br>
-                <a href="./kamakura3.html" class="btn-animation-02"><span>5/11<span></a><br><br>
-                <br>
-            <h2>SONY MESH</h2>
-                <a href="./sony1.html" class="btn-animation-02"><span>4/19<span></a><br><br>
-                <a href="./sony2.html" class="btn-animation-02"><span>4/26<span></a><br><br>
-                <a href="./sony3.html" class="btn-animation-02"><span>5/17<span></a><br><br>
-                <!--a href="./sony4.html" class="btn-animation-02"><span>5/24<span></a><br><br>-->
-                <a href="./sony5.html" class="btn-animation-02"><span>8/3 ワークショップ本番<span></a><br><br>
-                <br>
-            <h2>サーキュラープロジェクト</h2>
-                <a href="./circular1.html" class="btn-animation-02"><span>１<span></a><br><br>
-               
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h4>春休み</h4>
+                    <a href="./1.html" class="btn-animation-02"><span>withal1<span></a><br><br>
+                    <a href="./2.html" class="btn-animation-02"><span>withal2<span></a><br><br>
+                    <a href="./3.html" class="btn-animation-02"><span>withal3<span></a><br><br>
+                    <a href="./EOC.html" class="btn-animation-02"><span>Essence of Challenge 2024<span></a><br><br>
+                    <a href="./4.html" class="btn-animation-02"><span>withal 発表<span></a><br><br>
+                </div>
+                <div class="col">
+                    <h4>鎌倉共創</h4>
+                    <a href="./kamakura1.html" class="btn-animation-02"><span>4/19<span></a><br><br>
+                    <a href="./kamakura2.html" class="btn-animation-02"><span>4/26<span></a><br><br>
+                    <a href="./kamakura3.html" class="btn-animation-02"><span>5/11<span></a><br><br>
+                </div>
+                <div class="col">
+                    <h4>SONY MESH</h4>
+                    <a href="./sony1.html" class="btn-animation-02"><span>4/19<span></a><br><br>
+                    <a href="./sony2.html" class="btn-animation-02"><span>4/26<span></a><br><br>
+                    <a href="./sony3.html" class="btn-animation-02"><span>5/17<span></a><br><br>
+                    <!--a href="./sony4.html" class="btn-animation-02"><span>5/24<span></a><br><br>-->
+                    <a href="./sony5.html" class="btn-animation-02"><span>8/3 ワークショップ本番<span></a><br><br>
+                </div>
+                <div class="col">
+                    <h4>サーキュラー</h4>
+                    <a href="./circular1.html" class="btn-animation-02"><span>１<span></a><br><br>
+                </div>
+            </div>
 
                     
         </div>
@@ -50,6 +91,6 @@
 <br>
 <br>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
